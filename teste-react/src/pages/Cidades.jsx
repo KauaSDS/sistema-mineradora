@@ -1,6 +1,6 @@
 // src/pages/Cidades.jsx
 import React, { useState, useEffect } from 'react';
-import { apiService } from '../services/api'; // Ajuste conforme exportar no seu api.js
+import { apiService } from '../services/api'; 
 
 export default function Cidades() {
   const [cidades, setCidades] = useState([]);
@@ -12,7 +12,7 @@ export default function Cidades() {
 
   const carregarCidades = async () => {
     try {
-      // Exemplo de chamada. O método real dependerá da sua api.js
+      
       const response = await apiService.listarCidades(); 
       setCidades(response.data || []);
     } catch (error) {

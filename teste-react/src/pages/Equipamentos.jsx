@@ -25,7 +25,7 @@ export default function Equipamentos() {
       await equipamentoService.criar({ nome, setor });
       setNome("");
       setSetor("");
-      carregarEquipamentos(); // Atualiza a lista após cadastrar
+      carregarEquipamentos(); 
     } catch (error) {
       console.error("Erro ao cadastrar", error);
     }
